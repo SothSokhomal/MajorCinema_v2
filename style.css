@@ -1,0 +1,344 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic); 
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0A2647;
+  color: whitesmoke;
+}
+
+a, button, input, textarea, select {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+ion-icon {
+  font-size: 32px;
+
+}
+
+img {
+  display: block;
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+
+a.active {
+  color: #C69749;
+  border-bottom: 3px solid #C69749;
+}
+
+footer {
+  padding: 15px;
+  background-image: linear-gradient(to right, #144272, #205295, #2C74B3, #144272);
+}
+
+footer h4 {
+  padding: 10px;
+  font-size: 20px;
+}
+
+footer div:nth-child(1),
+footer div:nth-child(2) {
+  display: none;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 25px;
+}
+
+
+/* Start here */
+/* HOME PAGE */
+
+.logo{
+  font-size: 20px;
+  font-weight: 800;
+  text-shadow: 3px 3px 3px white;
+}
+
+
+header{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.icon{
+  padding: 1rem;
+  justify-self: end;
+}
+
+
+nav{
+  padding: 1rem;
+  display: none;
+}
+
+
+nav a{
+ font-size: 12px;
+ color: aliceblue;
+}
+
+
+nav a:hover{
+  color: #C69749;
+  border-bottom: solid #C69749;
+  width: fit-content;
+}
+
+.banner{
+  height: 300px ;
+  width: 100%;
+  background-image: url('./images/banner.png');
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  
+}
+
+
+.socials{
+  display: grid;
+  grid-template-columns: auto;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  width: fit-content;
+
+}
+
+.socials .banner{
+  display: grid;
+  justify-content: center;
+  align-items: end;
+}
+
+
+
+/* Movie */
+
+.movie {
+  position: relative;
+}
+
+.movie-thumbnail {
+  width: 100%;
+  height: 100%;
+}
+
+.movie-thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+
+.movie-detail {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  opacity: 0;
+
+  display: grid;
+  gap: 15px;
+
+  transition: all 500ms;
+}
+
+.movie:hover .movie-detail {
+  opacity: 1;
+}
+
+.movie-info {
+  display: grid;
+  gap: 15px;
+}
+
+.movie-detail p {
+  font-weight: 600;
+  font-size: 14px;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 10px;
+}
+.filter{
+  text-align:left;
+  padding: 2rem;
+}
+.filter a{
+  font-size: 15px;
+
+ 
+
+}
+
+.filter a:hover{
+  color: #C69749;
+  border-bottom: solid #C69749;
+  width: fit-content;
+}
+
+
+.movie-wrapper{
+  padding: 1.5rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, minmax(225px,275px));
+  
+}
+
+/* .movies{
+  overflow: hidden;
+} */
+/* .movie-detial h4{
+  font-size: 20px;
+  font-weight: 700;
+ 
+}
+
+
+.movie-detial{
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  
+  display: grid;
+  place-content: center;
+  gap: 15px;
+
+  position: relative;
+  left: 100%;
+  top: -100%;
+
+
+}
+
+
+.movies .movie-detial:hover{
+  top: 100%;
+} */
+
+/* CINEMA PAGE */
+
+.banner2{
+  background-image: url("./images/banner2.png");
+  height: 300px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+
+  display: grid;
+  place-content: center;
+  padding: 1rem;
+  
+ 
+}
+
+.intro{
+  padding: 1rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+ 
+ 
+  
+
+
+}
+
+.btn-info,
+.btn-buy{
+  border: 2px solid #C69749;
+  border-radius: 10px;
+ 
+}
+
+
+.btn-info{
+  color: #C69749;
+  font-weight: 700;
+
+}
+
+.btn-buy{
+  background-color: #C69749;
+  color: whitesmoke;
+}
+
+
+.search-bar{
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  justify-content: center;
+}
+
+input{
+  display: grid;
+  align-self: center;
+  background-color: rgb(185, 180, 180);
+  border-radius: 15px;
+  width:auto;
+  height: 35%;
+  
+ 
+
+}
+
+.cinemas{
+  width: 100%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 225px;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+
+
+}
+
+.cinema-info{
+  padding: 1rem;
+  display: grid;
+  place-content: center;
+  gap: 8px;
+  
+}
+
+.cinemas-wrapper{
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  
+}
+
+
